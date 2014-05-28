@@ -1,0 +1,198 @@
+﻿/*#region generic */
+body {
+    background-color: rgba(230, 230, 230, 0.40);
+}
+
+body, * h1, * h2, * h3, * h4, * h5, * h6, * a, * p *, li, input, .button {
+    font-family: 'Ubuntu', sans-serif !important;
+    /*reason: had to override because dd used foundation's font*/
+    font-weight: 400;
+}
+
+* a {
+    transition: color 0.5s ease-in-out;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.contains-margin-bottom {
+    margin-bottom: 0.4rem;
+}
+/*#endregion */
+
+/*#region header */
+.top-bar {
+    min-height: 3.4rem;
+    background: linear-gradient(rgba(246,246,246,1.0),#dedede);
+}
+
+/*#region logo */
+
+.logo h1 {
+    font-family: 'Mountains of Christmas', cursive !important;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.90);
+    padding: 0.2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+    .logo h1:hover {
+        color: rgba(0, 191, 255, 0.90);
+    }
+
+/*#endregion */
+
+/*#region search */
+
+.search-area:last-child {
+    margin-left: 0 !important;
+}
+
+.search input {
+    width: 40%;
+    border-radius: 3px;
+    transition: width 0.2s ease;
+}
+
+    .search input:focus {
+        width: 90%;
+    }
+
+/*#endregion */
+
+/*#region top bar navigation */
+
+.top-nav-element {
+    padding: 0.8rem 0;
+}
+
+    .top-nav-element a {
+        color: rgba(0, 0, 0, 0.90);
+        transition: color 0.3s ease-in-out;
+    }
+
+        .top-nav-element a:hover {
+            color: rgba(0, 191, 255, 0.90);
+        }
+
+/*#endregion */
+
+/*#endregion */
+
+/*#region user panel section */
+.content-primary {
+    margin-top: 2rem;
+}
+
+.user-panel {
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+    .user-panel .avatar {
+        overflow: hidden;
+    }
+
+.avatar {
+    margin: 0;
+    padding: 0;
+}
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+    }
+
+.username {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.user-panel-menu ul, .user-panel-menu li {
+    margin-left: 0 !important;
+}
+
+.user-panel-menu-icon img {
+    width: 2rem;
+    position: relative;
+    right: 0.8rem;
+}
+
+.notification *, .reputation *, .achievements * {
+    overflow: visible;
+}
+
+.count {
+    position: relative;
+    top: -1.0rem;
+}
+/*#endregion */
+
+/*#region primary content */
+.content-primary {
+    margin: 2.28rem;
+}
+
+.tabs-content ul, .question-tags li, .question-meta li {
+    margin-left: 0 !important;
+}
+
+.tabs-content article {
+    padding: 1rem;
+}
+
+.questions-section {
+}
+
+.question-tags .tag {
+    color: #fff;
+    background-color: rgb(128, 128, 128);
+    border-radius: 1.4px;
+    margin: 0 0.4em 0 0;
+}
+
+.question-meta, .asker-name, .asker-meta {
+    color: rgba(128, 128, 128, 0.90);
+}
+
+    .question-meta span {
+        margin-left: 0.4rem;
+    }
+
+    .question-meta .secondary {
+        margin-left: 0;
+    }
+
+.question-popularity {
+    border-right: 1px groove;
+}
+
+    .question-popularity li {
+        margin-left: 0;
+        margin-top: 0.05rem;
+    }
+
+.fit-inline-svg {
+    margin-top: 0.8rem;
+}
+
+.asker-meta {
+}
+
+    .asker-meta span {
+        font-size-adjust: 0.40;
+        margin: 0 0.2em 0 0;
+    }
+
+.asker-link {
+    color: rgba(128, 128, 128, 0.90);
+    transition: color 0.5s ease-out;
+}
+
+    .asker-link:hover {
+        color: rgba(0, 191, 255, 0.90);
+    }
+/*#endregion */

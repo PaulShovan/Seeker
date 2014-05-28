@@ -161,9 +161,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\app.css" />
+    <Content Include="Content\avatar\f-avatar.jpg" />
+    <Content Include="Content\avatar\m-avatar.png" />
+    <Content Include="Content\foundation\css\foundation.css" />
+    <Content Include="Content\foundation\css\foundation.min.css" />
+    <Content Include="Content\foundation\css\normalize.css" />
+    <Content Include="Content\foundation\js\foundation.min.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.abide.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.accordion.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.alert.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.clearing.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.dropdown.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.equalizer.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.interchange.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.joyride.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.magellan.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.offcanvas.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.orbit.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.reveal.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.tab.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.tooltip.js" />
+    <Content Include="Content\foundation\js\foundation\foundation.topbar.js" />
+    <Content Include="Content\foundation\js\foundation\jquery.cookie.js" />
+    <Content Include="Content\foundation\js\vendor\fastclick.js" />
+    <Content Include="Content\foundation\js\vendor\jquery.cookie.js" />
+    <Content Include="Content\foundation\js\vendor\jquery.js" />
+    <Content Include="Content\foundation\js\vendor\modernizr.js" />
+    <Content Include="Content\foundation\js\vendor\placeholder.js" />
     <Content Include="FirstTestPage.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
@@ -478,6 +504,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Index.html" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />

@@ -11,7 +11,8 @@ namespace Seeker.Model
     public class UserBasic
     {
         [BsonId]
-        public ObjectId UserId { get; set; }
+        public ObjectId _id { get; set; }
+        //public string UserId { get; set; }
         public string Username { get; set; }
     }
 }

@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\IQuestionRepository.cs" />
     <Compile Include="Concrete\IRepository.cs" />
     <Compile Include="Concrete\IUserRepository.cs" />
     <Compile Include="DataAccess\MongoRepository.cs" />
+    <Compile Include="DataAccess\QuestionRepository.cs" />
     <Compile Include="DataAccess\UserRepository.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

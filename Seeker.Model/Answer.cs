@@ -10,8 +10,8 @@ namespace Seeker.Model
 {
     public class Answer
     {
-        [BsonId]
-        public ObjectId AnswerId { get; set; }
+        
+        public string AnswerId { get; set; }
         public DateTime PostDate { get; set; }
         public string AnswerText { get; set; }
         public UserBasic AnswerBy { get; set; }

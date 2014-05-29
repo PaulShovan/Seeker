@@ -12,7 +12,7 @@ namespace Seeker.Model
     public class User
     {
         [BsonId]
-        public ObjectId UserId { get; set; }
+        public ObjectId _id { get; set; }
         public DateTime JoinDate { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }

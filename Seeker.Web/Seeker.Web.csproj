@@ -527,6 +527,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Seeker.Manager\Seeker.Manager.csproj">
+      <Project>{826515ee-486b-4e03-b79b-8fc9fdf8cb3a}</Project>
+      <Name>Seeker.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seeker.Model\Seeker.Model.csproj">
+      <Project>{4127457e-74b5-417c-ab8a-9e9d181eedc3}</Project>
+      <Name>Seeker.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

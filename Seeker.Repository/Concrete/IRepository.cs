@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using Seeker.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +13,9 @@ namespace Seeker.Repository.Concrete
         IList<T> GetAll();
         //T GetById(int id);
         bool Add(T entity);
-        void Update(T entity);
+        void UpdateEntity(T entity);
         void Delete(T entity);
         void Delete(int id);
+        
     }
 }

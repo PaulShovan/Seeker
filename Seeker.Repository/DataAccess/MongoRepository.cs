@@ -1,5 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Builders;
+using Seeker.Model;
 using Seeker.Repository.Concrete;
 using System;
 using System.Collections.Generic;
@@ -20,6 +22,7 @@ namespace Seeker.Repository.DataAccess
 
         public IList<T> GetAll()
         {
+            
             List<T> all = new List<T>();
             try
             {
@@ -33,10 +36,7 @@ namespace Seeker.Repository.DataAccess
             }
         }
 
-        public T GetById(ObjectId id)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public bool Add(T entity)
         {
@@ -55,7 +55,7 @@ namespace Seeker.Repository.DataAccess
 
         }
 
-        public void Update(T entity)
+        public void UpdateEntity(T entity)
         {
             throw new NotImplementedException();
         }
@@ -69,5 +69,9 @@ namespace Seeker.Repository.DataAccess
         {
             throw new NotImplementedException();
         }
+
+
+        
+   
     }
 }

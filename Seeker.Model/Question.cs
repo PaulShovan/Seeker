@@ -11,7 +11,7 @@ namespace Seeker.Model
     public class Question
     {
         [BsonId]
-        public ObjectId QuestionId { get; set; }
+        public ObjectId _id { get; set; }
         public UserBasic QuestionBy { get; set; }
         public DateTime PostDate { get; set; }
         public string QuestionTitle { get; set; }

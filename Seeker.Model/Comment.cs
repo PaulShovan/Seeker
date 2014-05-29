@@ -10,8 +10,7 @@ namespace Seeker.Model
 {
     public class Comment
     {
-        [BsonId]
-        public ObjectId CommentId { get; set; }
+        public string CommentId { get; set; }
         public UserBasic CommentBy { get; set; }
         public string CommentBody { get; set; }
         public int upvote { get; set; }

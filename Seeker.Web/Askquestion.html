@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/foundation/css/foundation.min.css" rel="stylesheet" />
+    <link href="../Content/app.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="plugins/ckeditor/samples/sample.css" rel="stylesheet" />
+    <script src="plugins/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            <div class="row">
+                <div class="large-12 small-12 columns">
+                    <!--title-->
+                    <label>Title</label>
+                    <input type="text" placeholder="Describe the question briefly." />
+                    <!--tags-->
+                    <label>Tags</label>
+                    <div class="row collapse">
+                        <div class="large-1 small-2 columns">
+                            <span class="prefix">#</span>
+                        </div>
+                        <div class="large-11 small-10 columns">
+                            <input type="text" placeholder="Tags help others find the question, be careful!" />
+                        </div>
+                    </div>
+                    <!--text-processor-->
+                    <label>Description</label>
+                    <textarea class="textarea" name="article-body" style="height: 200px" placeholder="Add detailed description of the question here."></textarea>
+                    <!--submit button-->
+                    <input class="submit-question button" type="button" value="Post question" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

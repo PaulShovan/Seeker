@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--foundation css-->
+    <link href="foundation/css/foundation.min.css" rel="stylesheet" />
+    <!--foundation js-->
+    <script src="foundation/js/vendor/modernizr.js">
+    </script>
+    <script src="foundation/js/foundation.min.js">
+    </script>
+
+    <!--custom styles-->
+    <link href="Index.css" rel="stylesheet" />
+
+    <!--font family-->
+    <!--logo-->
+    <link href='http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700' rel='stylesheet' type='text/css' />
+    <!--menu navigation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <!--registration form-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/social.css" />
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        // This is called with the results from from FB.getLoginStatus().
+        function statusChangeCallback(response) {
+            console.log('statusChangeCallback');
+            console.log(response);
+            // The response object is returned with a status field that lets the
+            // app know the current login status of the person.
+            // Full docs on the response object can be found in the documentation
+            // for FB.getLoginStatus().
+            if (response.status === 'connected') {
+                // Logged into your app and Facebook.
+                $("#facebook").visible = false;
+                testAPI();
+            } else if (response.status === 'not_authorized') {
+                // The person is logged into Facebook, but not your app.
+                $("#facebook").visible = false;
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into this app.';
+            } else {
+                // The person is not logged into Facebook, so we're not sure if
+                // they are logged into this app or not.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into Facebook.';
+            }
+        }
+
+        // This function is called when someone finishes with the Login
+        // Button.  See the onlogin handler attached to it in the sample
+        // code below.
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '236512299876389',
+                cookie: true,  // enable cookies to allow the server to access
+                // the session
+                xfbml: true,  // parse social plugins on this page
+                version: 'v2.0' // use version 2.0
+            });
+
+            // These three cases are handled in the callback function.
+            FB.login(function (response) {
+                if (response.status === 'connected') {
+                    // Logged into your app and Facebook.
+                } else if (response.status === 'not_authorized') {
+                    // The person is logged into Facebook, but not your app.
+                } else {
+                    // The person is not logged into Facebook, so we're not sure if
+                    // they are logged into this app or not.
+                }
+            });
+
+
+            FB.getLoginStatus(function (response) {
+                if (response.status === 'connected') {
+                    console.log(response.authResponse.accessToken);
+                }
+            });
+
+            FB.logout(function (response) {
+                // Person is now logged out
+            });
+        };
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        // Here we run a very simple test of the Graph API after login is
+        // successful.  See statusChangeCallback() for when this call is made.
+        function testAPI() {
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function (response) {
+                console.log('Successful login for: ' + response.name + ' ' + response.email);
+                document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response.name + '!';
+            });
+        }
+    </script>
+<div id="main">
+    <div id="container_demo">
+        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+        <div id="wrapper">
+            <div id="login" class="animate form">
+                <form autocomplete="on">
+                    <h1>Log in</h1>
+                    <h3>Login using facebook </h3>
+                    <div class="fblogin">
+                        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                    </div>
+                    <h3>Or login using your Seeker credentials</h3>
+                    <p>
+                        <label for="username" class="uname" data-icon="u"> Your email or username </label>
+                        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com" />
+                    </p>
+                    <p>
+                        <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                    <p class="keeplogin">
+                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                        <label for="loginkeeping">Keep me logged in</label>
+                    </p>
+                    <p class="login button1"  >
+                        <input type="submit" value="Login" />
+                    </p>
+                    <p class="change_link">
+                        Not a member yet ?
+                        <a href="#toregister" class="to_register">Join us</a>
+                    </p>
+                </form>
+            </div>
+
+            <div id="register" class="animate form">
+                <form action="mysuperscript.php" autocomplete="on">
+                    <h1> Sign up </h1>
+                    <p>
+                        <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                    </p>
+                    <p>
+                        <label for="citysignup" class="uname" data-icon="u">Your city</label>
+                        <input id="citysignup" name="citysignup" required="required" type="text" placeholder="eg. London" />
+                    </p>
+                    <p>
+                        <label for="countrysignup" class="uname" data-icon="u">Your country</label>
+                        <input id="countrysignup" name="countrysignup" required="required" type="text" placeholder="eg. United Kingdom" />
+                    </p>
+                    <p>
+                        <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com" />
+                    </p>
+                    <p>
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                    <p>
+                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                    <p class="signin button1">
+                        <input type="submit" value="Sign up" />
+                    </p>
+                    <p class="change_link">
+                        Already a member ?
+                        <a href="#tologin" class="to_register"> Go and log in </a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

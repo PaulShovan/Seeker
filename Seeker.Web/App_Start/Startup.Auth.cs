@@ -21,17 +21,17 @@ namespace Seeker.Web
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseMicrosoftAccountAuthentication(
+                clientId: "000000004811E94B",
+                clientSecret: "zCJlM1cCv9ddv0IyKuKoFiyeWyskYdvp");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(
+               consumerKey: "qJRx1ndr4blaPYGw1RbIVPC9m",
+               consumerSecret: "SRSWMi0CTHj6BHZjsWlJEgWrGwb3Px8b3pj2TT8zuwRDy40X4Q");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "236512299876389",
+               appSecret: "8304b4644f5970f8567105ef76b6d1d6");
 
             //app.UseGoogleAuthentication();
         }

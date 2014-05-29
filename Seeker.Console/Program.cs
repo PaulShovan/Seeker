@@ -42,7 +42,7 @@ namespace Seeker.ConsoleApp
             aUserData.UserCity = "Dhaka";
             aUserData.UserCountry = "Bangladesh";
             aUserData.UserName = "noname";
-
+            repo.Add(aUserData);
             //bool s = repo.Add(aUserData);
 
             //ShowData(s.ToString());
@@ -82,8 +82,9 @@ namespace Seeker.ConsoleApp
             aComment.CommentDate = DateTime.Now;
             aComment.CommentId = "2";
             aComment.upvote = 0;
-            ShowData(qRepo.AddCommentToAnswer(new ObjectId("538675cadff4651e0c7a256f"), "1", aComment).ToString());
-            //ShowData(qRepo.Add(aQuestion).ToString());
+            ShowData(qRepo.Add(aQuestion).ToString());
+            ShowData(qRepo.AddCommentToQuestion(new ObjectId("5386c8c96ccdc00d4861b8a4"), aComment).ToString());
+
             
             
             

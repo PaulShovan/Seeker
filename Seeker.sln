@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeker.Web", "Seeker.Web\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeker.ConsoleApp", "Seeker.Console\Seeker.ConsoleApp.csproj", "{E527C891-CB5F-4C0D-84B8-6789B68E64DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeker.Manager", "Seeker.Manager\Seeker.Manager.csproj", "{826515EE-486B-4E03-B79B-8FC9FDF8CB3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeker.Manager", "Seeker.Manager\Seeker.Manager.csproj", "{1C2669A0-8BC7-432C-BACA-AB10843DE1A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{E527C891-CB5F-4C0D-84B8-6789B68E64DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E527C891-CB5F-4C0D-84B8-6789B68E64DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E527C891-CB5F-4C0D-84B8-6789B68E64DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{826515EE-486B-4E03-B79B-8FC9FDF8CB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{826515EE-486B-4E03-B79B-8FC9FDF8CB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{826515EE-486B-4E03-B79B-8FC9FDF8CB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{826515EE-486B-4E03-B79B-8FC9FDF8CB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2669A0-8BC7-432C-BACA-AB10843DE1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2669A0-8BC7-432C-BACA-AB10843DE1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2669A0-8BC7-432C-BACA-AB10843DE1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2669A0-8BC7-432C-BACA-AB10843DE1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

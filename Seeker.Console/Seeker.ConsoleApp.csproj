@@ -65,6 +65,10 @@
       <Project>{6547885e-26f8-446b-8ba8-1c641a15ca6c}</Project>
       <Name>Seeker.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Seeker.Web\Seeker.Web.csproj">
+      <Project>{e1af8401-197d-447c-959b-d6b03e960c0e}</Project>
+      <Name>Seeker.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -15,8 +15,8 @@ namespace Seeker.Repository
             try
             {
 
-                //var con = new MongoConnectionStringBuilder("server=127.0.0.1;database=seekertest");
-                var con = new MongoConnectionStringBuilder(ConfigurationManager.ConnectionStrings["SeekerDB"].ConnectionString);
+                var con = new MongoConnectionStringBuilder("server=127.0.0.1;database=seekertest");
+                //var con = new MongoConnectionStringBuilder(ConfigurationManager.ConnectionStrings["SeekerDB"].ConnectionString);
                 var server = MongoServer.Create(con);
                 db = server.GetDatabase(con.DatabaseName);
             }
